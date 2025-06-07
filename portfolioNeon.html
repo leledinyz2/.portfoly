@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Perfil da Lele</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chicle&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --olive: #708238;
+            --olive-light: #a2b279;
+            --bg-dark: #1e1e1c;
+            --bg-card: #2a2a25;
+            --text-light: #f2f2f2;
+            --text-muted: #b6c0a3;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background: url('https://external-media.spacehey.net/media/sHYAgT3_SJxtZ_6YVZ1HDzsZ0mkUvpl1bQclmrevcOQA=/https://img.freepik.com/vetores-gratis/plano-de-fundo-xadrez-verde_23-2150550774.jpg?w=826&t=st=1687346680~exp=1687347280~hmac=5ec6eef63a5f4ba0fd394b5fe2dc0300ef3493134e9d79d1e31d44e4f7b8c3e9');
+            color: var(--text-light);
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        .profile-container {
+            background-color: var(--bg-card);
+            border: 2px solid var(--olive);
+            border-radius: 16px;
+            display: flex;
+            flex-direction: column;
+            max-width: 900px;
+            width: 100%;
+            box-shadow: 0 0 20px rgba(112, 130, 56, 0.2);
+            animation: fadeIn 1.2s ease;
+        }
+
+        .header {
+            display: flex;
+            padding: 30px;
+            gap: 30px;
+            align-items: center;
+            border-bottom: 1px solid var(--olive-light);
+        }
+
+        .avatar {
+            width: 180px;
+            height: 180px;
+            border-radius: 50% 20% 50% 20%;
+            border: 5px solid var(--olive);
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .info {
+            flex: 1;
+        }
+
+        .info h1 {
+            font-family: "Chewy", system-ui;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 80px;
+            margin: 0 0 10px;
+            color: var(--olive);
+        }
+
+        .info p {
+            font-family: "Chicle", serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 25px;
+            line-height: 1.5;
+            color: var(--text-muted);
+        }
+
+        .details {
+            padding: 20px 30px;
+            font-size: 1rem;
+        }
+
+        .details p {
+            margin: 10px 0;
+            font-family: "Darumadrop One", sans-serif;
+            font-size: 20px;
+        }
+
+        .details strong {
+            color: var(--olive-light);
+        }
+
+        .badges {
+            margin-top: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .badge {
+            background: var(--olive-light);
+            color: #1e1e1c;
+            padding: 6px 12px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        .footer {
+            padding: 20px 30px;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--olive-light);
+        }
+
+        a {
+            font-family: "Cabin Sketch", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 25px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-5px);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .avatar {
+                width: 120px;
+                height: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="profile-container">
+    <div class="header">
+        <img class="avatar" src="https://cdn.spacehey.net/profilepics/3517532_e8fe9e0dd2f7de0a333151d2936b447c.jpg?expires=1749348188&token=bb197c062232f2b244103329c443142fbfda5ef54ac2fef67b6c9d7b85a7195e" alt="Foto da Lele">
+        <div class="info">
+            <h1>Lele🌿</h1>
+            <p>Aprendiz de programação apaixonada por HTML, CSS e interfaces com alma. Buscando criar um universo web acolhedor, bonito e funcional.</p>
+        </div>
+    </div>
+
+    <div class="details">
+        <p><strong>📍 Local:</strong> Sao Paulo,Brasil</p>
+        <p><strong>🌐 Site pessoal:</strong> <a href="#" style="color: var(--olive-light); text-decoration: none;">meusite.com</a></p>
+        <p><strong>📚 Estudando:</strong> JavaScript, acessibilidade e animações com estilo</p>
+        <p><strong>💻 Tecnologias:</strong></p>
+        <div class="badges">
+            <div class="badge">HTML5</div>
+            <div class="badge">CSS3</div>
+            <div class="badge">Git & GitHub</div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <a href="https://www.instagram.com/lele_xxy_/" style="color: var(--olive-light); text-decoration: none;">Instagram</a> - <a href="#" style="color: var(--olive-light); text-decoration: none;">meusite.com</a> - <a href="https://spacehey.com/leledinyz" style="color: var(--olive-light); text-decoration: none;">SpaceHey</a>
+    </div>
+</div>
+
+</body>
+</html>
